@@ -38,7 +38,7 @@ $(document).ready(function(){
        
        
     });
-    
+    console.log(fondo);
     $select_concepto[0].selectize.setValue(fondo.id_concepto);
     var $select_partida = $('select[name="partida"]').selectize({ 
         

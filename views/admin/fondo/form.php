@@ -1,5 +1,4 @@
 <div ng-controller="InputCtrl" class="panel panel-body">
-    <?php print_r($fondo); ?>
     <div class="lead text-success"><?=lang('fondo:'.$this->method)?></div>
     <?php if($fondo->xml_messages){?>
         
@@ -162,7 +161,7 @@
                                          
                                          
                                          
-                                         <!--input type="hidden" value="<?=$fondo->xml?>" name="xml" /--> 
+                                         <input type="hidden" value="<?=$fondo->xml?>" name="xml" /> 
                                          
                                          
                                      </div>

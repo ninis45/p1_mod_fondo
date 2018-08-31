@@ -154,7 +154,7 @@ class Fondo extends Public_Controller
         $anio  = $this->input->post('anio');
         $corte = $this->config->item('corte');
         
-        $time_config = strtotime($anio.'-'.$field.'-'.$corte);
+        $time_config = strtotime($anio.'-'.$field.'-'.$corte.' 23:59:59');
         
         if($time_config < now())
         {

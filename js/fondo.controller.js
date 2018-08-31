@@ -2,35 +2,14 @@
     'use strict';
     
      angular.module('app.fondo')
-     .controller('IndexCtrl',['$scope','$http','$cookies',IndexCtrl])
+     .controller('IndexCtrl',['$scope','$http',IndexCtrl])
      .controller('InputCtrl',['$scope','$http',InputCtrl]);
      
-     function IndexCtrl($scope,$http,$cookies)
+     function IndexCtrl($scope,$http)
      {
+        console.log(items);
         
-         
-        $scope.oneAtATime =  true;
-        $scope.open_mes = 2;//parseInt($cookies.get('fondo:mes'));
-        
-        //console.log($scope.open_mes);
-        $scope.get_mes = function(index)
-        {
-            if($scope.open_mes == index)
-                return true;
-            return false;
-        }
-        $scope.set_mes = function(index)
-        {
-            
-            //$scope.active = index;
-            //$scope.open_mes = index;
-            $cookies.put('fondo:mes',index);
-        }
-        $scope.select = function()
-        {
-            $scope.open_mes=0;
-            console.log($scope.open_mes);
-        }
+        $scope.items = items;
      }
      function InputCtrl($scope,$http)
      {

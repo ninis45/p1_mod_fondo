@@ -19,9 +19,6 @@ $lang['fondo:help_create']		     	=	'<p>- Por favor llena los campos requeridos 
 $lang['fondo:add_question']			=	'¿DESEAS AGREGAR OTRA SOLICITUD?';
 
 $lang['fondo:delete_success']			=	'Los conceptos %s han sido eliminados satisfactoriamente';
-
-$lang['fondo:error_mes']			=	'La solicitud ya no se encuentra vigente para este mes.';
-
 $lang['fondo:error_folder']			=	'La carpeta facturación aun no ha sido creada';
 
 $lang['fondo:error_cadena']			=	'Error al tratar de formar la cadena';
