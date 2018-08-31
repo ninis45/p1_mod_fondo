@@ -1,4 +1,5 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
+
 /**
  * Groups module
  *
@@ -7,7 +8,9 @@
  */
  class Module_Fondo extends Module
 {
+
 	public $version = '1.0';
+
 	public function info()
 	{
 		$info= array(
@@ -72,6 +75,7 @@
         
         return $info;
 	}
+
 	public function install()
 	{
 	    $this->dbforge->drop_table('fondo');
@@ -112,11 +116,14 @@
 		{
 			return false;
 		}
+
         return true;
         
 		
+
 		
 	}
+
 	public function uninstall()
 	{
 	  
@@ -124,9 +131,11 @@
         $this->dbforge->drop_table('fondo');
 		return true;
 	}
+
 	public function upgrade($old_version)
 	{
 		return true;
 	}
+
 }
 ?>
